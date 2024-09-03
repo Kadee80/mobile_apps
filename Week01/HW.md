@@ -6,14 +6,8 @@
 
 - Make sure you have all software set up for next class.
 
-- Make a new folder in your HW repo called Week_1. Create an HTML file containing a recipe card (CSS styling is optional). Take a look at the Notes and Examples in `/Resources/` for HTML and CSS basics. The recipe card should contain:
-  - A photo of the completed dish (or placeholder img)
-  - Brief description of the recipe
-  - List of ingredients
-  - List of instructions
-
-We will be converting this from HTML to JSX next week.
+- Practice creating a new react project, editing the starter files, and creating components using JSX and loading content from data. This part of the HW will make more sense after we complete Thursdays class.
 
 Use `git add` `git commit` and `git push` to upload these folders and files to Github, just like we did in class today.
 
-**Documentation is 5% of your grade at IDM.**
+**Reminder: Documentation is 5% of your grade at IDM. A clean repo with detailed markdown files and commented code is an easy way to achieve this!**
