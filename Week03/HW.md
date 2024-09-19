@@ -1,4 +1,8 @@
-# HW Due Tuesday Week04
+### Announcement: Next Week's classes will be held via Zoom.
+
+Please keep your eyes peeled for an email to schedule each Zoom class with a link to the meeting.
+
+## HW Due Tuesday Week04
 
 Make your own reusable component in the `components/` folder and a page that demos usage in the `pages/` folder. If you are having a hard time coming up with ideas take a look at Bootstrap or some other framework for ideas.
 
