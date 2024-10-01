@@ -1,13 +1,13 @@
 import TodoItem from './TodoItem'
-
 const TodoList = (props) => {
   const {todos, onDelete, onEdit} = props
 
-  const renderedContent = todos.map((todo) => (
+  // the list component is only responsible for mapping and passing props
+  // we can use the todo.id for the key!
+  const renderedTodos = todos.map((todo) => (
     <TodoItem key={todo.id} todo={todo} onDelete={onDelete} onEdit={onEdit} />
   ))
-
-  return <div>{renderedContent}</div>
+  return <div>{renderedTodos}</div>
 }
 
 export default TodoList

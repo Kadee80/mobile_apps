@@ -20,13 +20,33 @@ const App = () => {
   }
 
   const deleteTodoById = (id) => {
-    //TODO
+    // look at the array, find the matching id and remove it!
+    // filter returns a copy of the array you are filtering through
+    const updatedTodos = todos.filter((todo) => {
+      // return thruthy keep, falsey chuck
+      return todo.id !== id
+    })
+    setTodos(updatedTodos)
+  }
+
+  const editTodoById = (id, newTitle) => {
+    const updatedTodos = todos.map((todo) => {
+      // if the IDs match, this is the one to update
+      if (todo.id === id) {
+        // copy old values, then add new values
+        return {...todo, title: newTitle}
+      }
+      // otherwise return the untouched todo
+      return todo
+    })
+    // set our state here, and pass it all the way back down...
+    setTodos(updatedTodos)
   }
   return (
     <div>
       {todos.length}
       <TodoCreate onCreate={createTodo} />
-      <TodoList todos={todos} onDelete={deleteTodoById} />
+      <TodoList todos={todos} onDelete={deleteTodoById} onEdit={editTodoById} />
     </div>
   )
 }

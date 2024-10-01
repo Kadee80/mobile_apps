@@ -1,15 +1,33 @@
-import React from 'react'
+import {useState} from 'react'
+import TodoEdit from './TodoEdit'
 
 const TodoItem = (props) => {
-  const {todo, onDelete} = props
+  const {todo, onDelete, onEdit} = props
+  const [showEdit, setShowEdit] = useState(false)
 
-  const handleClick = () => {
+  const handleDelete = () => {
     onDelete(todo.id)
+  }
+
+  const handleShowEdit = () => {
+    // for now, just hide show edit component
+    setShowEdit(!showEdit)
+  }
+
+  const handleSubmit = (id, newTitle) => {
+    onEdit(id, newTitle)
+    handleShowEdit()
+  }
+
+  let content = <h3>{todo.title}</h3>
+  if (showEdit) {
+    content = <TodoEdit todo={todo} onSubmit={handleSubmit} />
   }
   return (
     <div>
-      <h3>{todo.title}</h3>
-      <button onClick={handleClick}>Delete</button>
+      {content}
+      <button onClick={handleShowEdit}>Edit</button>
+      <button onClick={handleDelete}>Delete</button>
     </div>
   )
 }
