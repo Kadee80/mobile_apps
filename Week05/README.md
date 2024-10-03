@@ -9,7 +9,9 @@ Our child components will make their own requests to CREATE EDIT and DELETE
 Next up we will:
 
 1- create API
+
 2- make initial request
+
 3- create edit delete requests to server, THEN update local data
 
 First we need a new node package in our project. We will be using JSON Server
