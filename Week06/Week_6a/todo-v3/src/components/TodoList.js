@@ -1,20 +1,13 @@
-import {useContext} from 'react'
-import TodoContext from '../context/Todos'
+import useTodoContext from '../hooks/use-todo-context'
 
 import TodoItem from './TodoItem'
 
-const TodoList = (props) => {
-  const {todos, onDelete, onEdit} = props
-  const message = useContext(TodoContext)
+const TodoList = () => {
+  const {todos} = useTodoContext()
   const renderedTodos = todos.map((todo) => (
-    <TodoItem key={todo.id} todo={todo} onDelete={onDelete} onEdit={onEdit} />
+    <TodoItem key={todo.id} todo={todo} />
   ))
-  return (
-    <div>
-      <h1>{message}</h1>
-      {renderedTodos}
-    </div>
-  )
+  return <div>{renderedTodos}</div>
 }
 
 export default TodoList

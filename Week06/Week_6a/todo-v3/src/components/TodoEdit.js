@@ -1,12 +1,10 @@
 import {useState} from 'react'
+import useTodoContext from '../hooks/use-todo-context'
+
 const TodoEdit = (props) => {
-  //  FIRST PASS USE OnEDIT
-  // const {todo, onEdit} = props
-
-  // LAST use onSubmit instead after updating TodoItem
   const {todo, onSubmit} = props
-
   const [title, setTitle] = useState(todo.title)
+  const {editTodoById} = useTodoContext()
 
   const handleChange = (event) => {
     setTitle(event.target.value)
@@ -14,7 +12,8 @@ const TodoEdit = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    onSubmit(todo.id, title)
+    editTodoById(todo.id, title)
+    onSubmit()
   }
   return (
     <form onSubmit={handleSubmit}>
