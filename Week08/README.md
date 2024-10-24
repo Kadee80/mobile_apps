@@ -16,7 +16,7 @@ Windows users will need to download and use PowerShell. Some of you have been us
 3- In terminal, run `npm install --legacy-peer-deps`
 If you have any errors, make sure you have a recent version of Node installed.
 
-4- Run `rpm start`. Instead of opening up your browser like before, this script opens the React Native Bundler (bundles up your code to run on a mobile device).
+4- Run `npm start`. Instead of opening up your browser like before, this script opens the React Native Bundler (bundles up your code to run on a mobile device).
 
 5- Install `Expo` app on your phone or mobile device.
 
