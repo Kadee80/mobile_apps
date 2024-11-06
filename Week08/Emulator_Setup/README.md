@@ -18,12 +18,12 @@ https://docs.expo.dev/workflow/android-studio-emulator
 2. Launch XCode and agree to its terms. It will start installing more tools and software
 3. Eventually, you will get a "Welcome to XCode" screen
 4. In the top menu bar, click "XCode", then "Preferences" and then "Locations".
-5. Make sure that the "Command Line Tools" are installed and selected. ￼
+5. Make sure that the "Command Line Tools" are installed and selected.￼
 6. ![xcode install](./img/1_xcode.png)
 7. In the XCode menu, select "Open Developer Tool" and then "Simulator".
 8. You can change the default device by right-clicking the Simulator icon in the App menu bar and choosing your preferred ios version and ios device.
 9. After your device has been chosen, go to your terminal and in your React Native project directory, run npx expo start
-10. You should see a scannable QR code along with a menu. Press the "i" key to open your iOS simulator: ￼
+10. You should see a scannable QR code along with a menu. Press the "i" key to open your iOS simulator:￼
 11. ![terminal ios](./img/2_terminal.png)
 12. This will attempt to launch the Expo application in a simulated device and run your bundled code.
 13. Your iPhone device simulator should prompt you with an “Open In Expo” button. Click Open.
