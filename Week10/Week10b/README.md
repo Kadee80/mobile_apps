@@ -495,7 +495,7 @@ export default axios.create({
 To save our API key in our project, but in a file ignored by git/github, we need to install another package:
 
 ```bash
-expo install react-native-dotenv
+npx expo install react-native-dotenv
 ```
 
 And update babel.config.js:
