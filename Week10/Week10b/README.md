@@ -121,7 +121,7 @@ Notice we are specifying a specific version and its dependencies. There is a v6 
 
 _Install Dependencies:_
 
-````bash
+```bash
 npx expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view -- --legacy-peer-deps
 ```
 
