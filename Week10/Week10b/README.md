@@ -114,7 +114,7 @@ Open up a second tab inside terminal (make sure you are still inside your projec
 _Install React Navigation:_
 
 ```bash
-npm install react-navigation@4.4.4 --legacy-peer-deps
+npm install react-navigation@4.4.4 --legacy-peer-deps
 ```
 
 Notice we are specifying a specific version and its dependencies. There is a v6 available now, but will require a few refactors if you want to make this upgrade.
@@ -122,14 +122,14 @@ Notice we are specifying a specific version and its dependencies. There is a v6 
 _Install Dependencies:_
 
 ```bash
-npx expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view -- --legacy-peer-deps
+npx expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view -- --legacy-peer-deps
 ```
 
 _Install React Navigation Stack:_
 
 ```bash
-npm install react-navigation-stack @react-native-community/masked-view --legacy-peer-deps
-````
+npm install react-navigation-stack @react-native-community/masked-view --legacy-peer-deps
+```
 
 _Update babel.config.js:_
 
