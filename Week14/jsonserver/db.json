@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post from DB",
+      "content": "Some content so the index screen isn't empty at first!"
+    },
+    {
+      "id": "8bc7",
+      "title": "Another Post",
+      "content": "Now we have a listener"
+    }
+  ]
+}
